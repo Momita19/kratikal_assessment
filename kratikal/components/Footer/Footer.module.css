@@ -1,0 +1,110 @@
+.footer {
+    background-color: #f8f9fa;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 48px;
+  }
+  
+  .footer h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer address {
+    font-style: normal;
+  }
+  
+  .footer .socialMedia a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #000;
+  }
+  
+  .footer .socialMedia a:hover {
+    color: #007bff;
+  }
+  
+  .footer .text-center a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .footer .text-center a:hover {
+    text-decoration: underline;
+  }
+  
+  .footerBox {
+    background-color: #e8f1fa;
+  }
+  
+  .clickContainer {
+    position: relative;
+    text-align: center;
+  }
+  
+  .imageFooter {
+    width: 100%;
+    height: 129px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .buttonarrow {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #155a9c;
+  }
+  
+  .arrow {
+    display: flex;
+    align-items: center;
+  }
+  

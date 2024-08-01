@@ -1,0 +1,76 @@
+.navbar {
+    padding-left: 72px;
+    padding-right: 20px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .contactButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  .contactButton:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-link {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .contactButton {
+      padding: 10px 20px;
+    }
+  }
+  
+  .customGap {
+    gap: 1rem; /* Default gap (gap-2 equivalent) */
+  }
+  
+  @media (min-width: 992px) {
+    .customGap {
+      gap: 0; /* gap-0 equivalent for large screens */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .customGap {
+      gap: 1.5rem; /* Custom gap for screens larger than 1280px */
+    }
+  }
+  

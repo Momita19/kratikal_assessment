@@ -1,0 +1,133 @@
+.eventContainer {
+    padding-left: 124px;
+    padding-right: 124px;
+    margin-top: 68px;
+  }
+  
+  .eventHeader {
+    margin-bottom: 40px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  
+  .eventHeader h4 {
+    color: #000;
+    margin: 0;
+  }
+  
+  .eventHeader h1 {
+    font-size: 36px;
+    color: #000;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+  
+  .eventHeader p {
+    color: #666;
+  }
+  
+  .countdownContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 48px;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #164190;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .registerButton {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .registerButton:hover {
+    background-color: #218838;
+  }
+  
+  .eventDetails {
+    display: flex;
+  }
+  
+  .detailBox {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 14px;
+  }
+  
+  .detailBox h5 {
+    margin: 0 0 10px;
+    color: #164190;
+  }
+  
+  .detailBox p {
+    margin: 0;
+    color: #666;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .eventContainer {
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-top: 32px;
+    }
+  
+    .eventHeader {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .eventHeader h1 {
+      font-size: 28px;
+    }
+  
+    .eventHeader h4, .eventHeader p {
+      font-size: 16px;
+    }
+  
+    .countdownContainer {
+      align-items: center;
+    }
+  
+    .countdown {
+      width: 100%;
+      font-size: 24px;
+      padding: 16px;
+    }
+  
+    .registerButton {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .eventDetails {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .detailBox {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
