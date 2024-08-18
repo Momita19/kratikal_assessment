@@ -2,8 +2,10 @@
 import { useState } from 'react';
 import styles from './RegistrationForm.module.css';
 import Timer from './../Timer';
+import axios from 'axios';
 
 const RegistrationForm = () => {
+  // http://localhost:3001/api/data
   const [formData, setFormData] = useState({
     fullName: '',
     workEmail: '',
@@ -14,6 +16,9 @@ const RegistrationForm = () => {
     subscribe: false,
   });
 
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
   const handleChange = (e: any) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -22,11 +27,36 @@ const RegistrationForm = () => {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+    try {
+      const response = await axios.post('http://localhost:3001/api/data', formData);
+      setSuccessMessage('Registration successful!');
+      setErrorMessage('');  // Clear any previous error messages
+      console.log(response.data);
+
+      // Reset form fields
+      setFormData({
+        fullName: '',
+        workEmail: '',
+        phoneNumber: '',
+        companyName: '',
+        designation: '',
+        noOfEmployees: '',
+        subscribe: false,
+      });
+    } catch (error) {
+      setErrorMessage('Registration failed. Please try again.');
+      setSuccessMessage('');  // Clear any previous success messages
+      console.error(error);
+    }
   };
+
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   // Handle form submission logic here
+  //   console.log(formData);
+  // };
 
   return (
     <div className={styles.container}>
@@ -114,6 +144,8 @@ const RegistrationForm = () => {
         </div>
        
         <button className={styles.button} type="submit">Submit</button>
+        {successMessage && <p className={styles.success}>{successMessage}</p>}
+        {errorMessage && <p className={styles.error}>{errorMessage}</p>}
       </form>
     </div>
   );
