@@ -1,0 +1,12 @@
+
+.mux{
+    /* --seek-forward-button: none; */
+    /* --seek-backward-button: none; */
+    --seek-forward-button: none;
+    --center-controls: none; 
+    --top-captions-button: none;
+}
+/* mux-player {
+    --media-object-fit: cover;
+    --media-object-position: center;
+  } */

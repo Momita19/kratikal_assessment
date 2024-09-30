@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Body.module.css';
 import Image from 'next/image';
+import Videotest from '../Videotest'
 
 const Body = () => {
   return (
@@ -42,6 +43,7 @@ const Body = () => {
           </p>
         </div>
       </div>
+      <Videotest/>
     </div>
   );
 };
